@@ -31,8 +31,14 @@ public class UserAdapter extends ArrayAdapter<User> {
 
         View row = layoutInflater.inflate(R.layout.row,null);
 
-        TextView txtRowLabel = row.findViewById(R.id.txt_row_label);
+        TextView txtRowLabel = row.findViewById(R.id.txt_firstname);
         txtRowLabel.setText(users.get(position).getFirstName());
+
+        TextView txtRowLabel2 = row.findViewById(R.id.txt_lastname);
+        txtRowLabel2.setText(users.get(position).getLastName());
+
+        TextView txtRowLabel3 = row.findViewById(R.id.txt_email);
+        txtRowLabel3.setText(users.get(position).getLastName());
         //ImageView imgRowImage = (ImageView) row.findViewById(R.id.img_row_image);
         //imgRowImage.setImageResource(R.drawable.ic_add_circle);
 

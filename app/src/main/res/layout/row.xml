@@ -1,29 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.michiel.werkstuk.MainActivity">
 
-    <TextView
-        android:id="@+id/txt_row_label"
+    <!-- default LinearLayout orientation is horizontal -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_vertical"
-        tools:text="Bob" />
+        android:layout_height="35dp"
+        android:textSize="16dp"
+        >
 
-    <TextView
-        android:id="@+id/txt_row_label2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_vertical"
-        tools:text="Bob" />
+        <!-- android:layout_weight attribute defines how much space a View gets relative to adjacent Views.
+        More information: https://developer.android.com/guide/topics/ui/layout/linear#Weight -->
+        <TextView
+            android:id="@+id/txt_label_firstname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="firstname"
+            android:textSize="16dp"
+            android:textAlignment="center"
 
-    <TextView
-        android:id="@+id/txt_row_label3"
+          />
+
+        <TextView
+            android:id="@+id/txt_label_lastname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="lastname"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_label_email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="email"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_vertical"
-        tools:text="Bob" />
+        android:layout_height="50dp"
+        >
+
+        <!-- android:layout_weight attribute defines how much space a View gets relative to adjacent Views.
+        More information: https://developer.android.com/guide/topics/ui/layout/linear#Weight -->
+        <TextView
+            android:id="@+id/txt_firstname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:text="Bob"
+            android:textSize="22dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_lastname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:text="Bob"
+            android:textSize="22dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:text="Bob"
+            android:textSize="22dp"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
 </LinearLayout>
